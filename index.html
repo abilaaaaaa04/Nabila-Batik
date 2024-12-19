@@ -241,24 +241,24 @@
                 </div>
             </div>
             <div class="contactform">
-                <form>
+                <form id="contactForm" onsubmit="return showAlert()">
                     <h2>
                         <font face="Sour Gummy">Kirim Masukkan</font>
                     </h2>
                     <div class="inputbox">
-                        <input type="text" name="" required="required">
+                        <input type="text" id="name" name="name" required="required">
                         <span>
                             <font face="Sour Gummy">Nama</font>
                         </span>
                     </div>
                     <div class="inputbox">
-                        <input type="text" name="" required="required">
+                        <input type="text" id="email" name="email" required="required">
                         <span>
                             <font face="Sour Gummy">Email</font>
                         </span>
                     </div>
                     <div class="inputbox">
-                        <textarea required="required"></textarea>
+                        <textarea id="message" required="required"></textarea>
                         <span>
                             <font face="Sour Gummy">Beri kritik & saran</font>
                         </span>
@@ -268,6 +268,22 @@
                     </div>
                 </form>
             </div>
+
+            <script>
+                function showAlert() {
+                    // Mengambil nilai input dari elemen dengan id "name"
+                    const name = document.getElementById("name").value;
+
+                    // Menampilkan alert dengan nama yang diinput
+                    alert("Halloww, " + name + "! Terimakasih atas kritik & sarannyaa(ෆ˙ᵕ˙ෆ)♡!");
+
+                    // Mengosongkan form
+                    document.getElementById("contactForm").reset();
+
+                    return false; // Mencegah pengiriman form ke server
+                }
+            </script>
+
         </div>
     </section>
 
