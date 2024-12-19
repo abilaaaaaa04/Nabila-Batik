@@ -466,3 +466,14 @@ header .icons a:hover {
     padding: 10px;
     font-size: 18px;
 }
+footer {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #493628;
+    border-radius: 10px;
+    color: #DED0B6;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
